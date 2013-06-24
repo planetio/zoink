@@ -13,7 +13,7 @@
   };
   
   Z.prototype.handleEvent = function(e) {
-    if (body.scrollTop > 2) {
+    if (window.pageYOffset > 2) {
       this.hasScrolled = true;
       window.removeEventListener("scroll", this);
       this.load();
