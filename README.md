@@ -1,6 +1,6 @@
 Created by http://planet.io
 
-Zoink is a way to lazy load background images. Problem with most lazy load scrolling solutions is they don't work for background images. They only lazy load <img> tags. But for responsive designed websites, there are multiple images for an element using background images. To lazy load content, you can use zoinked for background images!
+Zoink is a way to lazy load background images. Problem with most lazy load scrolling solutions is they don't work for background images. They only lazy load img tags. But for responsive designed websites, there are multiple images for an element using background images. To lazy load content, you can use zoinked for background images!
 
 1. Add .zoinked css class for lazy loaded content
 ```
@@ -9,9 +9,11 @@ Zoink is a way to lazy load background images. Problem with most lazy load scrol
 }
 ```
 
-2. Load Zoink JS
+2. Load Zoink JS after the document has loaded.
  ```
 <script type="text/javascript" charset="utf-8">
   var zoink = new window.Zoink();
 </script>
 ```
+
+Or load Zoink with AMD, like require.js.

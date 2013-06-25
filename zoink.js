@@ -22,11 +22,11 @@
   
   Z.prototype.load = function() {
     if (typeof $ !== "undefined") {
-      $(document.body).addClass(CSS_CLASS);
+      $(body).addClass(CSS_CLASS);
     } else if (document.body.classList) {
-      document.body.classList.add(CSS_CLASS);
+      body.classList.add(CSS_CLASS);
     } else {
-      document.body.className += CSS_CLASS;
+      body.className += CSS_CLASS;
     }
   };
   
